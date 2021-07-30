@@ -91,7 +91,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Incorporate the date sort | M |  4 | :---: | :---: |
 | Additional styling for Navbar, Footer | L |  3 | :---: | :---: |
 | Additional styling for main (to mimic the actual wesbite) | L | 4 | :---: | :---: |
-| Total | H | 32hrs|  |  |
+| Total | H | 31hrs|  |  |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
