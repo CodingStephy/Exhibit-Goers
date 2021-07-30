@@ -18,7 +18,7 @@ Wireframes
 https://res.cloudinary.com/dt5zbnwvr/image/upload/v1627657840/M523ba0d9c3b3a47da438f1599d2883d21627612747104_jpflw4.png
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-wireframes
+Architecture
 https://res.cloudinary.com/dt5zbnwvr/image/upload/v1627660005/Me2d4dc0f8d0814a74b1c5ec44bce0ee41627659888551_jlzdts.png
 MVP/PostMVP - 5min
 The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
@@ -30,11 +30,13 @@ Add favorites to the exhibitions
 Create a fav exhibitions list 
 Navbar with options that link to the to-go page 
 Options that filters the exhibition 
-Button  that filters the exhibition according to dates 
-Instructions page
+Button that re-arrange the exhibition dates
+
 PostMVP 
 Carousel that displays the exhibitions
 Videos and Location 
+Filter the Exhibition by Exact Dates 
+
 
 Components
 Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
