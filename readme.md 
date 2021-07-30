@@ -2,7 +2,7 @@ Project Links
 https://github.com/CodingStephy/Project2
 https://project2-git-master-codingstephy.vercel.app/
 Project Description
-For this project, I plan to make a multiple-choice trivia game. I will use React's Link and Source to provide access to instructions, the game itself, and a leaderboard. The questions and possible answers will be populated using an API call. The leaderboard will be stored on a Google Sheet and also viewed through an API call.
+For this project, I plan to make a website for exhibition-lovers to keep track of the exhibition they plan to go . I will use API call to fetch the data of the exhibitions and to update the list . There will also be a separate web-page that contains buttons to sort and filter the event dates to help the users to pick the right exhibitions for them. 
 
 API
 https://cdn.contentful.com//spaces/nbe8tmkxy59u/environments/master/entries?access_token=ynfiaMt1N5Skp8U-uq7Z49Xc9OSl6g-je6-cEcapCqU&content_type=exhibition
