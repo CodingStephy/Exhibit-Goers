@@ -37,3 +37,25 @@ filter:opacity(90%);
 }
 
 
+.main p{
+  color:grey;
+  font-size:15px;
+  margin-top:20%; 
+  margin-left: 5px;
+  margin-right:5px; 
+  background-color: white; opacity: .8;
+}
+
+.Footer{
+  background: #333;
+  text-align: center; 
+  margin:0; 
+}
+
+
+.Footer p{
+  /* padding-left: 10px;
+  padding-right:10px; */
+  color:white;
+  font-size:15px;
+}
