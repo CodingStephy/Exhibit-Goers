@@ -7,8 +7,6 @@ import React from 'react'
   
 
 const ExhibitionList = (props) => {
-  // console.log("Products", props);
-  const loaded = () => {
     return (
       <div className="container">
         {props.exhibit.map((exhibit, index) => {
@@ -17,21 +15,22 @@ const ExhibitionList = (props) => {
              <img src={exhibit.image} alt=""></img>
               <h1 className="name">{exhibit.title}</h1>
               <p className="date">{exhibit.startDate} - {exhibit.endDate}</p>
-              <a href={exhibit.link}>See More</a>
+              <a href={exhibit.link}>Learn More </a>
               {/* <div className="link">{exhibit.link}</div> */}
-              <button className="like"><BsFillHeartFill/></button>
+              <button className="like" onClick={()=>props.addToList(exhibit)}
+               ><BsFillHeartFill/></button>
             </div>
-          );
+          )
         })}
       </div>
     );
   };
-  const loading = () => {
-    return <h1>No List to Display</h1>;
-  };
+//   const loading = () => {
+//     return <h1>No List to Display</h1>;
+//   };
 
-  return props ? loaded() : loading();
-};
+//   return props ? loaded() : loading();
+// };
 
     //    <Card>
     //     <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
