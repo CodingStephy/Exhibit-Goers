@@ -17,7 +17,7 @@ const ExhibitionList = (props) => {
               <p className="date">{exhibit.startDate} - {exhibit.endDate}</p>
               <a href={exhibit.link}>Learn More </a>
               {/* <div className="link">{exhibit.link}</div> */}
-              <button className="like" onClick={()=>props.handleClick(props.exhibit)}
+              <button className="like" onClick={()=>props.handleClick(exhibit)}
                ><BsFillHeartFill/></button>
             </div>
            );

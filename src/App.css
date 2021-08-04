@@ -218,12 +218,29 @@ filter:opacity(90%);
   .exhibit-card{
     margin:15px; 
   }
+
+
+  .SelectedExhibition{
+    margin-top:20%;
+  }
+
   .exhibit-card img{
+    width:700px;
+    height:450px;
+  }
+
+  .SelectedExhibition img{
     width:700px;
     height:450px;
   }
   
   .exhibit-card .name {
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, sans-serif;
+  }
+
+  .SelectedExhibition .name{
     font-size: 24px;
     text-align: left;
     font-family: 'Times New Roman', Times, sans-serif;
@@ -236,6 +253,10 @@ filter:opacity(90%);
     font-family: Arial, Helvetica, sans-serif;
     margin-top: -1px;
     margin-left: -1px;
+  }
+
+  .Selected Exhibition .media{
+    
   }
   .exhibit-card a{
     color: #767676;

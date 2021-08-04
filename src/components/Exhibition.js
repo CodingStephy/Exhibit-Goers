@@ -1,4 +1,6 @@
 import React from 'react'
+import { BsXSquareFill } from "react-icons/bs";
+  
 
 const Exhibition = (props) => {
     const loaded = () => {
@@ -8,6 +10,8 @@ const Exhibition = (props) => {
               <h1 className="name">{props.selected.title}</h1>
               <p className="date">{props.selected.startDate} - {props.selected.endDate}</p>
               <a href={props.selected.link}>Learn More</a>
+             <button className="remove" onClick={()=>props.removeFromList()}
+            ><BsXSquareFill/></button>
         </div>
     )
 }

@@ -10,6 +10,7 @@ import {useState,useEffect} from 'react'
 const App = () => {
   const [list, setList] = useState([])
   const [exhibit,setExhibit] = useState([])
+  // const [togos, setTogos] = useState([]);
   
 
   const getExhibit = async() =>{
@@ -51,7 +52,7 @@ const App = () => {
           <Main exhibit ={exhibit} addToList={addToList}/>
           </Route>
         <Route path= "/mylist">
-          <MyList list={list} removeFromList={removeFromList}/>
+          <MyList list={list}  removeFromList={removeFromList}/>
           </Route>
         </Switch>
       </main>
