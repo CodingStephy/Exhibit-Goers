@@ -316,7 +316,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1500px) {
+@media screen and (min-width: 1024px) and (max-width: 1450px) {
   .main h2{
     margin-top:18%;
     }
@@ -329,7 +329,7 @@
     }
 
   .main hr{
-    margin-top:26%; 
+    margin-top:25%; 
     color: #767676;; 
     margin-right:15px;;
     margin-left:15px; 
@@ -354,7 +354,7 @@
 
   .exhibit-card img{
     width:500px;
-    height:350px;
+    height:340px;
   }
 
   .SelectedExhibition img{
@@ -416,9 +416,9 @@
 
 
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1450px) {
   .main h2{
-    margin-top:10%;
+    margin-top:9%;
     }
 
   .main p{
