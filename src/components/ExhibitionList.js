@@ -6,25 +6,25 @@ import React from 'react'
   import { BsFillHeartFill } from "react-icons/bs";
   
 
-const ExhibitionList = (props) => {
-      return (
-      <div className="container">
-        {props.exhibit.map((exhibit, index) => {
-          return (
-              <div className="exhibit-card" key={index}>
-             <img src={exhibit.image} alt=""></img>
-              <h1 className="name">{exhibit.title}</h1>
-              <p className="date">{exhibit.startDate} - {exhibit.endDate}</p>
-              <a href={exhibit.link}>Learn More </a>
-              {/* <div className="link">{exhibit.link}</div> */}
-              <button className="like" onClick={()=>props.handleClick(exhibit)}
-               ><BsFillHeartFill/></button>
-            </div>
-           );
-          })}
-        </div>
-      );
-        }
+  const ExhibitionList = (props) => {
+    return (
+    <div className="container">
+      {props.exhibit.map((exhibit, index) => {
+        return (
+            <div className="exhibit-card" key={index}>
+           <img src={exhibit.image} alt=""></img>
+            <h1 className="name">{exhibit.title}</h1>
+            <p className="date">{exhibit.startDate} - {exhibit.endDate}</p>
+            <a href={exhibit.link}>Learn More </a>
+            {/* <div className="link">{exhibit.link}</div> */}
+            <button className="like" onClick={()=>props.handleClick(exhibit)}
+             ><BsFillHeartFill/></button>
+          </div>
+         );
+        })}
+      </div>
+    );
+      }
   // const loading = () => {
   //   return <h1>No List to Display</h1>;
   // };

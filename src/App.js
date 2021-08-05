@@ -35,9 +35,10 @@ const App = () => {
  }
 
  const removeFromList = (exhibit) => {
-  const index = list.findIndex((item) =>(exhibit=== item))
+  const index = list.findIndex((item) =>(exhibit.title === item.title))
   const updatedArray = [...list]
   updatedArray.splice(index, 1)
+  console.log("removeFromList",removeFromList)
   setList(updatedArray)
 }
 

@@ -1,5 +1,10 @@
+/* .App{
+  height:100vh; 
+} */
+
 .nav{
   display:flex;
+  height:40%; 
   text-decoration: none;
   justify-content: center; 
   flex-wrap: wrap;
@@ -31,9 +36,9 @@
   object-fit:cover;
   object-position:center; 
   width:100%;
-  height: 45%;
+  height: 40%;
   margin:0;
-filter:opacity(90%);
+ filter:opacity(90%);
 }
 
 
@@ -50,6 +55,7 @@ filter:opacity(90%);
   background: #333;
   text-align: center; 
   margin:0; 
+  bottom: 0;  
 }
 
 
@@ -78,6 +84,16 @@ filter:opacity(90%);
   align-items:center;
   margin:15px; 
 }
+
+.Favorites{
+  display:flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:center;
+  margin:15px; 
+  margin-bottom: 0;
+}
+
  .main h2{
    color: #1a1a1a;
    font-family: Helvetica,Arial,sans-serif;
@@ -89,7 +105,24 @@ filter:opacity(90%);
    margin-left:30px;
  }
 
-@media screen and (max-width:425px) {
+ .buttons{
+   display:flex; 
+   justify-content:center; 
+   margin-top:20%; 
+   flex-wrap: wrap;
+   font-size:22px; 
+ }
+
+ .buttons .button{
+   margin:3px; 
+ }
+
+ @media (min-width: 100px) and (max-width: 767px) {
+  .nav a {
+    margin-left:15%;
+    margin-right:15%; 
+   
+  }
   .main h2{
     display:none; 
   }
@@ -98,21 +131,53 @@ filter:opacity(90%);
   }
 
   .main p{
-  margin-top:27%; 
+  margin-top:53%; 
+  }
+
+  .buttons{
+    margin-top:53%;
   }
   .exhibit-card{
     margin:5px; 
   }
+
+  .SelectedExhibition{
+    margin:5px;
+  }
   .exhibit-card img{
     width:100%;
-    height:200px;
+    height:250px;
+  }
+
+  .SelectedExhibition img{
+    width:100%;
+    height:250px;
   }
 
   .exhibit-card .name{
     font-size: 22px;
     text-align: left;
+    font-family: 'Times New Roman', Times, sans-serif;
   }
+
+  .SelectedExhibition .name{
+    font-size: 22px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, sans-serif; 
+  }
+
    .exhibit-card .date{
+    color: #767676;
+    font-size:16px;
+    text-align: left;
+    letter-spacing: .01em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -5px;
+    margin-left: -1px;
+  }
+
+  .Favorites .SelectedExhibition .date{
+    color: #767676;
     font-size:16px;
     text-align: left;
     letter-spacing: .01em;
@@ -124,29 +189,43 @@ filter:opacity(90%);
   .exhibit-card a{
     color: #767676;
     font-size:16px;
+    text-decoration: none; 
+  }
+
+  .Favorites .SelectedExhibition a{
+    color: #767676;
+    font-size:16px;
     text-decoration: none;
+    margin-left:-1px; 
   }
 
   .exhibit-card button{
     margin-left:10px;
   }
+  .Favorites .SelectedExhibition button{
+    margin-left:10px;
+  }
+
+  /* .SelectedExhibition a{
+    margin-left:5px;
+  } */
 }
 
 
-@media screen and (min-width: 768px) and (max-width:1500px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .main h2{
-    margin-top:12%;
+    margin-top:41%;
     }
 
   .main p{
-    margin-top:24%;
+    margin-top:45%; 
     margin-left:15px; 
     margin-right:15px;
     margin-bottom: 20px;
     }
 
   .main hr{
-    margin-top:23%; 
+    margin-top:44%; 
     color: #767676;; 
     margin-right:15px;;
     margin-left:15px; 
@@ -157,20 +236,45 @@ filter:opacity(90%);
     opacity: .5;
   }
 
+  .buttons{
+    margin-top:40%;
+  }
   .exhibit-card{
     margin:15px; 
+    overflow:hidden; 
   }
+
+  .Favorites .SelectedExhibition{
+    margin:15px; 
+    overflow:hidden; 
+  }
+ 
   .exhibit-card img{
     width:600px;
     height:400px;
   }
-  
+
+
+  .SelectedExhibition img{
+    width:600px;
+    height:400px;
+    margin-left: 15px;
+    margin-right:15px; 
+  }
+
   .exhibit-card .name {
     font-size: 21px;
     text-align: left;
     font-family: 'Times New Roman', Times, sans-serif;
   }
 
+  .Favorites .SelectedExhibition .name{
+    font-size: 21px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, sans-serif;
+    margin-left: 6px;
+  }
+
   .exhibit-card .date{
     font-size:17px;
     text-align: left;
@@ -179,32 +283,52 @@ filter:opacity(90%);
     margin-top: -1px;
     margin-left: -1px;
   }
+
+  .Favorites .SelectedExhibition .date{
+    color: #767676;; 
+    font-size:17px;
+    text-align: left;
+    letter-spacing: .01em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1px;
+    margin-left: 5px;
+  }
+
   .exhibit-card a{
     color: #767676;
     font-size:16px;
     text-decoration: none;
   }
 
+  .Favorites .SelectedExhibition a{
+    color: #767676;
+    font-size:16px;
+    text-decoration: none;
+    margin-left: 7px;
+  }
   .exhibit-card button{
     margin-left:30px;
   }
 
+  .Favorites .SelectedExhibition button{
+    margin-left:30px;
+  }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   .main h2{
-    margin-top:12%;
+    margin-top:18%;
     }
 
   .main p{
-    margin-top:19%; 
+    margin-top:26%; 
     margin-left:15px; 
     margin-right:15px;
     margin-bottom: 20px;
     }
 
   .main hr{
-    margin-top:18%; 
+    margin-top:26%; 
     color: #767676;; 
     margin-right:15px;;
     margin-left:15px; 
@@ -219,29 +343,32 @@ filter:opacity(90%);
     margin:15px; 
   }
 
+   .buttons{
+    margin-top:18%;
+  }
 
   .SelectedExhibition{
-    margin-top:20%;
+    margin:15px;
   }
 
   .exhibit-card img{
-    width:700px;
-    height:450px;
+    width:500px;
+    height:350px;
   }
 
   .SelectedExhibition img{
-    width:700px;
-    height:450px;
+    width:500px;
+    height:350px;
   }
   
   .exhibit-card .name {
-    font-size: 24px;
+    font-size: 18px;
     text-align: left;
     font-family: 'Times New Roman', Times, sans-serif;
   }
 
-  .SelectedExhibition .name{
-    font-size: 24px;
+  .Favorites .SelectedExhibition .name{
+    font-size: 18px;
     text-align: left;
     font-family: 'Times New Roman', Times, sans-serif;
   }
@@ -255,10 +382,23 @@ filter:opacity(90%);
     margin-left: -1px;
   }
 
-  .Selected Exhibition .media{
-    
+  .Favorites .SelectedExhibition .date{
+    color: #767676;
+    font-size:17px;
+    text-align: left;
+    letter-spacing: .01em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1px;
+    margin-left: -1px;
   }
+  
   .exhibit-card a{
+    color: #767676;
+    font-size:16px;
+    text-decoration: none;
+  }
+
+  .Favorites .SelectedExhibition a{
     color: #767676;
     font-size:16px;
     text-decoration: none;
@@ -267,5 +407,108 @@ filter:opacity(90%);
   .exhibit-card button{
     margin-left:30px;
   }
+
+  .Favorites .SelectedExhibition button{
+    margin-left:30px;
+  }
+}
+
+
+
+@media screen and (min-width: 1500px) {
+  .main h2{
+    margin-top:10%;
+    }
+
+  .main p{
+    margin-top:18%; 
+    margin-left:15px; 
+    margin-right:15px;
+    margin-bottom: 20px;
+    }
+
+  .main hr{
+    margin-top:17%; 
+    color: #767676;; 
+    margin-right:15px;;
+    margin-left:15px; 
+    margin-right:15px;
+    margin-bottom: -330px;
+    background-color: grey;
+    height: .4;
+    opacity: .5;
+  }
+ .buttons{
+  margin-top:10%; 
+  }
+  .exhibit-card{
+    margin:15px; 
+  }
+
+  .SelectedExhibition{
+    margin:15px;
+  }
+
+  .exhibit-card img{
+    width:500px;
+    height:350px;
+  }
+
+  .SelectedExhibition img{
+    width:500px;
+    height:350px;
+  }
+  
+  .exhibit-card .name {
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, sans-serif;
+  }
+
+  .Favorites .SelectedExhibition .name{
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, sans-serif;
+  }
+
+  .exhibit-card .date{
+    font-size:17px;
+    text-align: left;
+    letter-spacing: .01em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .Favorites .SelectedExhibition .date{
+    color: #767676;
+    font-size:17px;
+    text-align: left;
+    letter-spacing: .01em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  
+  .exhibit-card a{
+    color: #767676;
+    font-size:16px;
+    text-decoration: none;
+  }
+  
+  .Favorites .SelectedExhibition a{
+    color: #767676;
+    font-size:16px;
+    text-decoration: none;
+  }
+
+
+  .exhibit-card button{
+    margin-left:30px;
+  }
+
+  .Favorites .SelectedExhibition button{
+    margin-left:30px;
+  }
+
 
 }

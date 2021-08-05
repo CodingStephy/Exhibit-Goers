@@ -30,16 +30,16 @@ const Togo = (props) => {
 
     return (
         <div className="buttons">
-        <button className="togo-btn btnn" onClick={() => filterTogos('revert')}>
+        <button className="button" onClick={() => filterTogos('revert')}>
             Remove Filters
           </button>
-          <button className="togo-btn btnn" onClick={() => filterTogos('current')}>
+          <button className="button" onClick={() => filterTogos('current')}>
             Current 
           </button>
-          <button className="togo-btn btnn" onClick={() => filterTogos('upcoming')}>
+          <button className="button" onClick={() => filterTogos('upcoming')}>
             Upcoming
           </button>
-          <button onClick={() => filterTogos('sorted')} className="togo-btn btnn">
+          <button onClick={() => filterTogos('sorted')} className="button">
             Sort by End Date
           </button>
         </div>
