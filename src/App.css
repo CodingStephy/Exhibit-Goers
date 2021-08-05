@@ -119,6 +119,7 @@
 
  @media (min-width: 100px) and (max-width: 767px) {
   .nav a {
+    margin-top:4%; 
     margin-left:15%;
     margin-right:15%; 
    
@@ -131,7 +132,7 @@
   }
 
   .main p{
-  margin-top:53%; 
+  margin-top:55%; 
   }
 
   .buttons{

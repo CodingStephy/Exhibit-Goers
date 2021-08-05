@@ -77,33 +77,42 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H |  1 | :---: | :---: |
-| Basic Navbar & Footer | H | 1 | :---: | :---: |
-| Set up basic React routing| H |  1 | :---: | :---: |
-| Make exhibitions API call, parse important data| H | 1 | :---: | :---: |
-| Display Lists of Exhibition using Card | H | 5 | :---: | :---: |
-| Add love button to Exhibition Sections | H | 2 | :---: | :---: |
-| Add the Exhibition to My List | H | 1 | :---: | :---: |
-| Delete the Exhibition from My List | H | 1 | :---: | :---: |
-| Display the My List Page  | H |  3 | :---: | :---: |
-| My List Buttons to filter  | H |  2 | :---: | :---: |
-| re-organize Exhibition by Date | H |  2 | :---: | :---: |
-| Incorporate the date sort | M |  4 | :---: | :---: |
-| Additional styling for Navbar, Footer | L |  3 | :---: | :---: |
-| Additional styling for main (to mimic the actual wesbite) | L | 4 | :---: | :---: |
-| Total | H | 31hrs|  |  |
+| Create React app and files for all components | H |  1 | 0.5 | 0.5 |
+| Basic Navbar & Footer | H | 1 | 1.5 | 1.5 |
+| Set up basic React routing| H |  1 | 2 | 2 |
+| Make exhibitions API call, parse important data| H | 1 | 4 | 4 |
+| Display Lists of Exhibition using Card | H | 5 | 2 | 2 |
+| Add love button to Exhibition Sections | H | 2 | 1 | 1 |
+| Add the Exhibition to My List | H | 1 | 1 | 1 |
+| Delete the Exhibition from My List | H | 1 | 4 | 4 |
+| Display the My List Page  | H |  3 | 2 | 2 |
+| My List Buttons to filter  | H |  2 | 2 | 2 |
+| re-organize Exhibition by Date | H |  2 | 1 | 1 |
+| Incorporate the date sort | M |  4 | 5 | 5 |
+| Additional styling for Navbar, Footer | L |  3 | 3 | 3 |
+| Additional styling for main (to mimic the actual wesbite) | L | 4 | 2 | 2 |
+| Total | H | 31hrs| 31hrs | 31hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 
 Reactstrap-Cards
-
+icons 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+   function filterTogos(condition) {
+        if(condition ==='upcoming') {
+           const filtered = togos.filter((item) => moment(item.startDate) >= Date.now());
+           setFilteredTogos(filtered)
+        } else if(condition === 'current') {
+          const currentEx = togos.filter((item) => moment(item.endDate) >= Date.now() && moment(item.startDate) <= Date.now());
+          setFilteredTogos(currentEx)
+        } else if(condition = 'sorted') {
+          //sorted by date
+          const sorted = togos.sort(function (x, y) {
+            let a = new Date(x.endDate),
+              b = new Date(y.endDate);
 ```
